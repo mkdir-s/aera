@@ -185,11 +185,7 @@ body {
 }
 
 .differences {
-  background-image: url(../images/differences-white.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  padding: 2.5% 0;
+  padding: 2.5% 0 0%;
 }
 .differences__left {
   margin-right: 7%;
@@ -265,4 +261,90 @@ body {
 }
 .differences__left-white--img {
   margin-right: 12px;
+}
+
+.how {
+  background-color: #F8FBFF;
+  height: 200vh;
+  position: relative;
+}
+.how__wrapper {
+  background-image: url(../images/svg/how-line.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 1% 1%;
+}
+.how__title {
+  color: #66ACFF;
+  font-family: Greenwich;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 137%; /* 68.5px */
+  text-align: center;
+  margin-bottom: 50px;
+  padding-left: 6%;
+}
+.how__title span {
+  font-weight: 400;
+}
+.how__item--1 {
+  background-image: url(../images/how-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 666px;
+  width: 100%;
+  max-height: 725px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  top: 1%;
+  left: 4.5%;
+}
+.how__item--2 {
+  background-image: url(../images/how-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 825px;
+  width: 100%;
+  max-height: 835px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  top: -9%;
+  right: -5%;
+}
+.how__item-title {
+  margin-bottom: 17px;
+}
+.how__item-descr {
+  width: 240px;
+  color: #FFF;
+  font-size: 19px;
+  font-weight: 350;
+  line-height: 25px; /* 131.579% */
+}
+.how__attention {
+  position: absolute;
+  text-align: center;
+  top: 17%;
+  left: 46.5%;
+}
+.how__attention-img {
+  margin-bottom: 21px;
+}
+.how__attention-text {
+  width: 195px;
+  color: #515151;
+  font-size: 19px;
+  font-weight: 350;
+  line-height: 25px; /* 131.579% */
 }
