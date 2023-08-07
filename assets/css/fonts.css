@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Greenwich';
+  src: local('Greenwich-Thin'),
+      url('../fonts/Greenwich-Thin.woff2') format('woff2'),
+      url('../fonts/Greenwich-Thin.woff') format('woff'),
+      url('../fonts/Greenwich-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Greenwich';
+  src: local('Greenwich-Regular'),
+      url('../fonts/Greenwich-Regular.woff2') format('woff2'),
+      url('../fonts/Greenwich-Regular.woff') format('woff'),
+      url('../fonts/Greenwich-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Greenwich';
+  src: local('Greenwich-Light'),
+      url('../fonts/Greenwich-Light.woff2') format('woff2'),
+      url('../fonts/Greenwich-Light.woff') format('woff'),
+      url('../fonts/Greenwich-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Greenwich';
+  src: local('Greenwich-ExtraLight'),
+      url('../fonts/Greenwich-ExtraLight.woff2') format('woff2'),
+      url('../fonts/Greenwich-ExtraLight.woff') format('woff'),
+      url('../fonts/Greenwich-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Greenwich';
+  src: local('Greenwich-SemiBold'),
+      url('../fonts/Greenwich-SemiBold.woff2') format('woff2'),
+      url('../fonts/Greenwich-SemiBold.woff') format('woff'),
+      url('../fonts/Greenwich-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Greenwich';
+  src: local('Greenwich-Medium'),
+      url('../fonts/Greenwich-Medium.woff2') format('woff2'),
+      url('../fonts/Greenwich-Medium.woff') format('woff'),
+      url('../fonts/Greenwich-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
