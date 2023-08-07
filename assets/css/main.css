@@ -7,6 +7,7 @@
 a {
   color: inherit;
   text-decoration: none;
+  display: inline-block;
 }
 button {
   cursor: pointer;
@@ -28,7 +29,7 @@ button {
 body {
   font-family: 'Greenwich';
   font-weight: 300;
-  background-color: #F8FBFF;
+  background-color: #fff;
 }
 .container {
   max-width: 1210px;
@@ -38,6 +39,7 @@ body {
 
 .header {
   padding: 20px 0;
+  background-color: #F8FBFF;
 }
 .header-nav {
   padding-left: 13%;
@@ -68,4 +70,199 @@ body {
   border-radius: 30px;
   background: #66ACFF;
   padding: 16px 19px 17px 32px;
+}
+
+.intro {
+  background-image: url(../images/intro-white.png);
+  background-repeat: no-repeat;
+  background-position: 100% -342%;
+  background-size: cover;
+  background-color: #F8FBFF;
+  height: calc(100vh - 100px);
+  padding-top: 11.5%;
+  position: relative;
+}
+.intro__info {
+  max-width: 747px;
+}
+.intro__info-title {
+  color: #66ACFF;
+  font-size: 70px;
+  font-weight: 250;
+  line-height: 137%;
+  margin-bottom: 11px;
+}
+.intro__info-title span {
+  font-weight: 400;
+}
+.intro__info-descr {
+  color: #515151;
+  font-family: Greenwich;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 25px; /* 131.579% */
+  margin-bottom: 39px;
+}
+.intro__info-box {
+  display: flex;
+  align-items: center;
+}
+.intro__box-button {
+  color: #515151;
+  font-size: 19px;
+  font-weight: 400;
+  border-radius: 30px;
+  background: #E8D3BF;
+  margin-right: 38px;
+  padding: 16px 19px 17px 32px;
+}
+.intro__box-email {
+  color: #515151;
+  font-size: 19px;
+  font-weight: 350;
+  padding-left: 30px;
+  position: relative;
+}
+.intro__box-email::before {
+  content: '';
+  position: absolute;
+  width: 21px;
+  height: 12px;
+  background-image: url(../images/svg/email.svg);
+  top: 4px;
+  left: 0px;
+}
+.intro__right {
+  position: absolute;
+  top: -13%;
+  right: 0%;
+  pointer-events: none;
+}
+.intro__right-input {
+  position: absolute;
+  top: 20%;
+  right: 48%;
+}
+.intro__right-box {
+  padding: 9px 4px 18px 19px;
+  border-radius: 10px;
+  background: #FFF;
+}
+.intro__right-box {
+  position: absolute;
+  bottom: 19%;
+  right: 17.5%;
+}
+.intro__box-title {
+  margin-bottom: 20px;
+  color: #515151;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px; /* 146.667% */
+}
+.intro__box-items {
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 0px;
+}
+.intro__box-item {
+  width: 60px;
+  text-align: center;
+}
+.intro__item-text {
+  color: #515151;
+  font-size: 13px;
+  font-weight: 350;
+  line-height: 22px; /* 169.231% */
+}
+.intro__item-img {
+  border-radius: 50%;
+}
+.intro__wheel {
+  position: absolute;
+  bottom: 6%;
+  right: 48%;
+}
+
+.differences {
+  background-image: url(../images/differences-white.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  padding: 2.5% 0;
+}
+.differences__left {
+  margin-right: 7%;
+}
+.differences__info {
+  max-width: 725px;
+  padding-top: 11%;
+}
+.differences__info-title {
+  color: #66ACFF;
+  font-size: 50px;
+  font-weight: 250;
+  line-height: 137%; /* 68.5px */
+  margin-bottom: 11px;
+}
+.differences__info-title span {
+  font-weight: 400;
+}
+.differences__info-descr {
+  margin-bottom: 70px;
+  color: #515151;
+  font-size: 19px;
+  font-weight: 350;
+  line-height: 25px; /* 131.579% */
+}
+.differences__info-button {
+  color: #515151;
+  font-family: Greenwich;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 17px 32px;
+  border-radius: 30px;
+  background: #E8D3BF;
+}
+.differences__left {
+  position: relative;
+}
+.differences__left-item {
+  padding: 11px 15px;
+  color: #515151;
+  font-size: 15px;
+  font-weight: 350;
+  line-height: 22px; /* 146.667% */
+  border-radius: 10px;
+  background: #DDEDFF;
+  position: absolute;
+}
+.differences__left-item--1 {
+  bottom: 32%;
+  left: 3%;
+}
+.differences__left-item--2 {
+  right: -4%;
+  bottom: 14%;
+}
+.differences__left-item--white {
+  display: flex;
+  justify-content: flex-start;
+  width: 200px;
+  align-items: center;
+  position: absolute;
+  color: #515151;
+  font-size: 15px;
+  font-weight: 350;
+  padding: 9px 9px 9px 9px;
+  bottom: 35%;
+  right: 0%;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.04);
+}
+.differences__left-white--img {
+  margin-right: 12px;
 }
