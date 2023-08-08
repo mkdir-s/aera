@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>aera</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/fonts.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/media.css">
 </head>
 <body>
   
@@ -14,14 +16,23 @@
     <div class="container">
       <div class="df jcsb aic">
         <a class="header__logo" href="#"><img src="assets/images/svg/logo.svg" alt="логотип"></a>
-        <nav class="header-nav">
-          <ul class="header-nav__menu">
-            <li class="header-nav__menu-item"><a class="header-nav__menu-link header-nav__menu-link--active" href="#"><span>для</span> Себя</a></li>
-            <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#"><span>для</span> Компании</a></li>
-            <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#"><span>для</span> Психологов</a></li>
-          </ul>
-        </nav>
-        <a class="header__button" href="#">Зарегистрироваться</a>
+        <div class="df aic header__wrapper">
+          <nav class="header-nav">
+            <div class="hamb hamb--active">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <ul class="header-nav__menu header-nav__menu--active">
+              <li class="header-nav__menu-item"><a class="header-nav__menu-link header-nav__menu-link--active" href="#"><span>для</span> Себя</a></li>
+              <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#"><span>для</span> Компании</a></li>
+              <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#"><span>для</span> Психологов</a></li>
+            </ul>
+          </nav>
+          <a class="header__button" href="#">Зарегистрироваться</a>
+          <a class="header__registration" href="#"><img src="assets/images/svg/registration.svg" alt="аккаунт"></a>
+        </div>
       </div>
     </div>
   </header>
@@ -33,7 +44,7 @@
           <p class="intro__info-descr">Это индивидуальные онлайн сессии с психологом, коучем, фитнес-тренером. Для вас и вашей компании.</p>
           <div class="intro__info-box">
             <a class="intro__box-button" href="#">Подобрать специалиста</a>
-            <p class="intro__box-email">go@aera.expert</p>
+            <a class="intro__box-email" href="#">go@aera.expert</a>
           </div>
         </div>
         <div class="intro__right">
@@ -103,18 +114,157 @@
           </div>
           <div class="how__item--2">
             <img class="how__item-title" src="assets/images/svg/02.svg" alt="02">
-            <p class="how__item-descr">Проведение сеанса онлайн. </p>
+            <p class="how__item-descr how__item-descr--2">Проведение сеанса онлайн. </p>
           </div>
           <div class="how__attention">
             <img class="how__attention-img" src="assets/images/svg/attention-2.svg" alt="внимание">
             <p class="how__attention-text">Мы гарантируем конфиденциальность и сохранность персональных данных</p>
           </div>
         </div>
-        <a class="how__button" href="#">Зарегистрироваться</a>
+        <div class="how__button--wrapper"><a class="how__button" href="#">Зарегистрироваться</a></div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__wrapper">
+          <div class="swiper reviews__swiper">
+            <div class="swiper-wrapper reviews__swiper-wrapper">
+              <div class="swiper-slide reviews__item">
+                <div class="reviews__item-top">
+                  <img class="reviews__top-img" src="assets/images/reviews-1.png" alt="клиент">
+                  <div class="reviews__top-right">
+                    <h5 class="reviews__right-name">Маша Катарсис</h5>
+                    <p class="reviews__right-pos">иллюстратолка</p>
+                  </div>
+                </div>
+                <p class="reviews__item-descr">Платформа, на которой я беру консультации, называется Понимаю. Каждую секунду беседы с Татьяной я чувствую понимание на 100%. Благодарю за все.					</p>
+              </div>
+              <div class="swiper-slide reviews__item">
+                <div class="reviews__item-top">
+                  <img class="reviews__top-img" src="assets/images/reviews-2.png" alt="клиент">
+                  <div class="reviews__top-right">
+                    <h5 class="reviews__right-name">Маша Катарсис</h5>
+                    <p class="reviews__right-pos">иллюстратолка</p>
+                  </div>
+                </div>
+                <p class="reviews__item-descr">Платформа, на которой я беру консультации, называется Понимаю. Каждую секунду беседы с Татьяной я чувствую понимание на 100%. Благодарю за все.					</p>
+              </div>
+              <div class="swiper-slide reviews__item">
+                <div class="reviews__item-top">
+                  <img class="reviews__top-img" src="assets/images/reviews-3.png" alt="клиент">
+                  <div class="reviews__top-right">
+                    <h5 class="reviews__right-name">Маша Катарсис</h5>
+                    <p class="reviews__right-pos">иллюстратолка</p>
+                  </div>
+                </div>
+                <p class="reviews__item-descr">Платформа, на которой я беру консультации, называется Понимаю. Каждую секунду беседы с Татьяной я чувствую понимание на 100%. Благодарю за все.					</p>
+              </div>
+              <div class="swiper-slide reviews__item">
+                <div class="reviews__item-top">
+                  <img class="reviews__top-img" src="assets/images/reviews-3.png" alt="клиент">
+                  <div class="reviews__top-right">
+                    <h5 class="reviews__right-name">Маша Катарсис</h5>
+                    <p class="reviews__right-pos">иллюстратолка</p>
+                  </div>
+                </div>
+                <p class="reviews__item-descr">Платформа, на которой я беру консультации, называется Понимаю. Каждую секунду беседы с Татьяной я чувствую понимание на 100%. Благодарю за все.					</p>
+              </div>
+              <div class="swiper-slide reviews__item">
+                <div class="reviews__item-top">
+                  <img class="reviews__top-img" src="assets/images/reviews-3.png" alt="клиент">
+                  <div class="reviews__top-right">
+                    <h5 class="reviews__right-name">Маша Катарсис</h5>
+                    <p class="reviews__right-pos">иллюстратолка</p>
+                  </div>
+                </div>
+                <p class="reviews__item-descr">Платформа, на которой я беру консультации, называется Понимаю. Каждую секунду беседы с Татьяной я чувствую понимание на 100%. Благодарю за все.					</p>
+              </div>
+            </div>
+            <div class="swiper-pagination reviews__swiper-pagination"></div>
+
+            <svg class="swiper-button-prev reviews-swiper__button-prev" width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M-4.15258e-07 8.5L14.25 0.272758L14.25 16.7272L-4.15258e-07 8.5Z" fill="#E8D3BF"/>
+            </svg>
+            <svg class="swiper-button-next reviews-swiper__button-next" width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 8.5L0.750001 0.272758L0.75 16.7272L15 8.5Z" fill="#E8D3BF"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section class="team">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 125"><path fill="#F8FBFF" fill-opacity="1" d="M0,128L60,117.3C120,107,240,85,360,96C480,107,600,149,720,165.3C840,181,960,171,1080,154.7C1200,139,1320,117,1380,106.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+      <div class="container">
+        <h2 class="team__title">Наша <span>команда</span></h2>
+        <div class="team__items">
+          <div class="team__item">
+            <div class="team__item-box">
+              <img class="team__box-img" src="assets/images/reviews-1.png" alt=".">
+              <span class="team__box-text">Психолог</span>
+            </div>
+            <h5 class="team__item-name">Елена <span>Немкова</span></h5>
+            <p class="team__item-pos">Психолог</p>
+            <a class="team__item-button" href="#">Подробнее</a>
+          </div>
+          <div class="team__item">
+            <div class="team__item-box">
+              <img class="team__box-img" src="assets/images/reviews-1.png" alt=".">
+              <span class="team__box-text">Коуч</span>
+            </div>
+            <h5 class="team__item-name">Елена <span>Немкова</span></h5>
+            <p class="team__item-pos">Коуч</p>
+            <a class="team__item-button" href="#">Подробнее</a>
+          </div>
+          <div class="team__item">
+            <div class="team__item-box">
+              <img class="team__box-img" src="assets/images/reviews-1.png" alt=".">
+              <span class="team__box-text">Коуч</span>
+            </div>
+            <h5 class="team__item-name">Елена <span>Немкова</span></h5>
+            <p class="team__item-pos">Коуч</p>
+            <a class="team__item-button" href="#">Подробнее</a>
+          </div>
+          <div class="team__item">
+            <div class="team__item-box">
+              <img class="team__box-img" src="assets/images/reviews-1.png" alt=".">
+              <span class="team__box-text">Фитнес тренер</span>
+            </div>
+            <h5 class="team__item-name">Елена <span>Немкова</span></h5>
+            <p class="team__item-pos">Фитнес тренер</p>
+            <a class="team__item-button" href="#">Подробнее</a>
+          </div>
+          <div class="team__item">
+            <div class="team__item-box">
+              <img class="team__box-img" src="assets/images/reviews-1.png" alt=".">
+              <span class="team__box-text">Психолог</span>
+            </div>
+            <h5 class="team__item-name">Елена <span>Немкова</span></h5>
+            <p class="team__item-pos">Психолог</p>
+            <a class="team__item-button" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="team__button--wrapper">
+          <a class="team__button" href="#">Зарегистрироваться</a>
+        </div>
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#ffffff" fill-opacity="1" d="M0,128L60,117.3C120,107,240,85,360,96C480,107,600,149,720,165.3C840,181,960,171,1080,154.7C1200,139,1320,117,1380,106.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+    <div class="container">
+      <div class="df jcsb aic">
+        <a class="footer__email" href="#">go@aera.expert</a>
+        <div class="footer__right">
+          <a class="footer__right-text footer__right-text--1" href="#">Политика конфиденциальности для клиентов</a>
+          <a class="footer__right-text" href="#">Политика конфиденциальности для психологов</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
